@@ -1,12 +1,12 @@
 ---
-title: 'First Blog'
+title: '1 Blog'
 text: 'Is Madeline Canonically Trans?'
  
 createdBy : 'Kovie Biakolo,'
 createdAt : 'April 5th 2013'
 author: 'Cassidy'
 logo_text: 'PHANTOM'
-name: 'Magna'
+name: '1'
 description: 'Happiness is a choice.So I often wonder: Is sadness a choice too? Who wants?'
 path: '/images/pic04.jpg'
 cover: '/images/pic09.jpg'
