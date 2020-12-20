@@ -1,26 +1,27 @@
 ## Overview
 You are reading this because you want to host your HTML website on Firebase (for that fast global CDN) and make changes via Github. If your website only requires HTML, you can host your HTML code on Github and have any changes you make to the HTML on Github automatically push through CircleCI to Firebase. 
 
-The following tutorial assumes that you have already created accounts at [Github](https://github.com/), [Firebase](https://firebase.google.com/), and [CircleCI](https://circleci.com/)  
+https://nextjs.org/docs/advanced-features/static-html-export
 
-## Step 1 - Firebase
-### Create Firebase Project
-Go through the process of creating a new firebase project and make sure to WRITE DOWN the project name for later. 
-### Create empty folder in terminal
+The following tutorial assumes that you have already created accounts at [Github](https://github.com/), [Firebase](https://firebase.google.com/), and [CircleCI](https://circleci.com/)  
+## Software Requirements
 ### Install Firebase CLI on your machine
 Follow the CLI installation instructions [here]. (https://firebase.google.com/docs/cli#install_the_firebase_cli) For now there is no way to avoid this, but if I figure it out, I will update this blog.
+
+## Step 1 - Create Firebase Project
+Go through the process of creating a new firebase project and make sure to WRITE DOWN the project name for later. 
+### Create a new firebase project
+Create a new firebase project
+Note the name of the project. It should be the name of the project plus a couple of random digits.
 ### Generate Firebase Token for CircleCI
-Within the folder that you just created, run the following two commands to generate your token for CircleCI 
+Run the following command in a terminal window to generate the token necessary for CircleCI to connect to Firebase.
 
  ```
  firebase init
  firebase login:ci
-   ```
+   ``` 
 
-SAVE this token for later. 
-
-## Step 2 - Github 
-### Clone/Download template code to your github
+## Step 2 - Clone Website Template 
 Clone https://github.com/wndsrfr21/templatepage.git into your own github directory
 
 ### Update /.circleci/config.yml
